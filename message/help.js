@@ -1,5 +1,5 @@
 exports.menu = (pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita) => {
-return`*╭─❒ 「 X - Dev Bot 」 ──────*
+return`*╭─❒ 「 INFORMATION 」 ──────*
 *│*
 *│*⬡ *${ucapanWaktu} kak*
 *│*⬡ *Nama : ${pushname}*
@@ -179,6 +179,7 @@ return`*╭─❒ 「 X - Dev Bot 」 ──────*
 
 ❒  *「 Thanks To : 」*  
 *│*
+*├  ▢  : Allah Swt*
 *├  ▢  : Hexagonz*
 *├  ▢  : X - Far Dev*
 *├  ▢  : Arsky*
@@ -187,8 +188,10 @@ return`*╭─❒ 「 X - Dev Bot 」 ──────*
 *├  ▢  : Vean*
 *├  ▢  : Diel*
 *├  ▢  : Penyedia Api & Module*
+*├  ▢  : All Mastah*
+*├  ▢  : All Creator BotZ*
 *│*
 *└─────────────* 
 
-❏ *𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎* ❏`
+❏ *_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*_* ❏`
 }

@@ -66,12 +66,12 @@ let imagenye = JSON.parse(fs.readFileSync('./temp/image.json'))
 let videonye = JSON.parse(fs.readFileSync('./temp/video.json'))
 let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 
-banChats = false
+banChats = true
 offline = false
 targetpc = '0'
-ownerNumber = ["919633687665@s.whatsapp.net","919633687665@s.whatsapp.net","919633687665@s.whatsapp.net","919633687665@s.whatsapp.net","919633687665@s.whatsapp.net","919633687665@s.whatsapp.net"]
-fake = 'Kʀͥɪͭᴢᷤ sͫᴇͤR'
-fake1 = 'Kʀͥɪͭᴢᷤ sͫᴇͤR'
+ownerNumber = ["380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","380944486343@s.whatsapp.net","380944486343@s.whatsapp.net"]
+fake = '𝙸𝚖 𝚂𝙰𝚈u𝙱𝚘𝚝𝚣'
+fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -317,12 +317,7 @@ module.exports = xdev = async (xdev, dev) => {
                     fs.unlinkSync(filename)
                 });
             }   
-            
 
-            var chats = await xdev.chats.array.filter(v => v.jid.endsWith('g.us'))
-            chats.map( async ({ jid }) => {
-            await xdev.chatRead(jid)
-            })
             //AUTO RESPON
       for (let i = 0; i < commandsDB.length ; i++) {
       if (budy == commandsDB[i].pesan) {
@@ -491,7 +486,7 @@ switch (command) {
     try {
 pic = await xdev.getProfilePicture(sender)
 } catch {
-pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
+pic = 'https://i.ibb.co/hCPB4XC/20211010.jpg'
 }
 gambar = await getBuffer(pic)
 mhan = await xdev.prepareMessage(from, gambar, image, {thumbnail: gambar})
@@ -503,7 +498,7 @@ gbutsan = [
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© 𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*_`,
     buttons: gbutsan,
     headerType: 4
 }
@@ -1276,7 +1271,7 @@ let ini_list = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'X - Dev Team',
+"displayName": '*© Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1284,7 +1279,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${ini_list.length} kontak`,
 "contacts": ini_list 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Nih Kak Creator X - Dev Team',text,{quoted: hehe})
+xdev.sendMessage(from,'Nih Kak Creator _*© Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*_',text,{quoted: hehe})
 break
 case 'style':
 				  if(!q) return reply('Masukkan teks!')
@@ -1295,7 +1290,7 @@ case 'style':
     })
 			break
 case 'pastebin':
-if(!q) return reply(`Example : X - Dev Bot`)
+if(!q) return reply(`Example : Sayu Bot`)
 anu = await fetchJson(`https://api-anoncybfakeplayer.herokuapp.com/pastebin?text=${q}`, {method: 'get'})
                    xdev.sendMessage(from, `${anu.result}`, text, {quoted: ftroli})
                      break
@@ -2290,7 +2285,7 @@ let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'X - Dev Team',
+"displayName": '*© Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xdev.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -2298,7 +2293,7 @@ hehe = await xdev.sendMessage(from, {
 "displayName": `${inilist.length} kontak`,
 "contacts": inilist 
 }, 'contactsArrayMessage', { quoted: dev })
-xdev.sendMessage(from,'Nih Kak Creator X - Dev Bot',text,{quoted: hehe})
+xdev.sendMessage(from,'Nih Kak Creator *© Hаȑѵп • 𝚂𝚃𝚈𝙻𝙴*',text,{quoted: hehe})
 }
 if (button == 'GITHUB') {
 console.log('GITHUB')
@@ -2306,13 +2301,13 @@ xdev.sendMessage(from, `*Nih kak github X - Dev Team*\n*Scnya free kak dan juga 
 }
 if (button == 'REST API') {
 console.log('REST API')
-xdev.sendMessage(from, `*Nih kak rest api yang digunakan oleh X - Dev Team Dan juga free*\n\nhttps://xdev-api.herokuapp.com/api\n\n*Gunakan dengan bijak dan jangan spam yah kak 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+xdev.sendMessage(from, `*Nih kak rest api yang digunakan oleh X - Dev Team Dan juga free*\n\nhttps://xdev-api.herokuapp.com/api\n\n*Gunakan dengan bijak dan jangan spam yah kak 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://i.ibb.co/hCPB4XC/20211010.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
 qur = budy.slice(2)
 exec(qur, (err, stdout) => {
-if (err) return reply(`@X - Dev Team:~ ${err}`)
+if (err) return reply(`@Hаȑѵп:~ ${err}`)
 if (stdout) {
 reply(stdout)
 }

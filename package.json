@@ -2,7 +2,8 @@
   "name": "𝚂𝙰𝚈u𝙱𝚘𝚝𝚣",
   "version": "1.0.0",
   "description": "Jangan diperjual belikan !",
-"engines": { "node": "14.x",
+  "engines": {
+    "node": "14.x",
   "main": "run.js",
   "directories": {
     "lib": "lib"

@@ -5,7 +5,7 @@
   "main": "run.js",
   "directories": {
     "lib": "lib"
-    "node": "14.x"
+    "node": "14.x"{
   },
   "dependencies": {
     "@adiwajshing/baileys": "github:adiwajshing/baileys",
